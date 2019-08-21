@@ -1,15 +1,15 @@
 package com.appdirect.lambdasImpl;
 
-import com.appdirect.lambdas.AnonymousInnerClassWithLambdaExampleInterf;
+import com.appdirect.lambdas.AnonymousInnerClassUsingLambdaExampleInterf;
 
-public class AnonymousInnerClassWithLambdaExample {
+public class AnonymousInnerClassUsingLambdaExample {
 
 	int x = 800;
 
 	/* Anonymous Inner Class */
-	
+
 	public static void main(String[] args) {
-		AnonymousInnerClassWithLambdaExampleInterf anonymousInnerClassWithLambdaExampleInterf = ()->{
+		AnonymousInnerClassUsingLambdaExampleInterf anonymousInnerClassWithLambdaExampleInterf = () -> {
 			int x = 900;
 			System.out.println(x);
 		};

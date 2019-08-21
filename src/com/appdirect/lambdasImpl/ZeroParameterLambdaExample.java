@@ -1,4 +1,4 @@
-package com.appdirect.lambdas;
+package com.appdirect.lambdasImpl;
 
 @FunctionalInterface
 interface Interf{

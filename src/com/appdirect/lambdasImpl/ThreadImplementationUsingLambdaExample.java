@@ -23,6 +23,14 @@ public class ThreadImplementationUsingLambdaExample {
 		});
 
 		threadOne.start();
+		
+		try {
+			threadOne.join();// Thread will wait until thread one completes its execution 
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 		threadTwo.start();
+		
 	}
 }

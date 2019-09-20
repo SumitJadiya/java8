@@ -5,8 +5,8 @@ import com.appdirect.lambdas.MultipleParameterLambdaExampleInterf;
 public class MultipleParameterLambdaExample {
 
 	public static void main(String[] args) {
-		MultipleParameterLambdaExampleInterf addition = (a,b)->a+b;
-		System.out.println("Addition performed "+addition.perform(10, 20));
+		MultipleParameterLambdaExampleInterf addition = (a,b)-> {return a+b;};
+		System.out.println("Addition performed "+addition.perform((int)10.4, 20));
 		
 		System.out.println("------*********---------");
 		MultipleParameterLambdaExampleInterf subtraction = (a,b)->a-b;

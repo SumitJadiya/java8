@@ -1,10 +1,32 @@
 package com.appdirect.lambdasImpl;
 
+
+//class OurOwnConrete implements Runnable{
+//
+//	@Override
+//	public void run() {
+//		// TODO Auto-generated method stub
+//
+//		for(int i=0; i<5; i++) {
+//			System.out.println("I'm a Thread One :)");
+//			try {
+//				Thread.sleep(1000);
+//			}
+//			catch (Exception e) {
+//				
+//			}
+//		}
+//	}
+//	
+//	
+//}
+//
+
 public class ThreadImplementationUsingLambdaExample {
 
 	public static void main(String[] args) {
 		
-		Thread threadOne = new Thread(()->{
+		Runnable threadOne = new Thread( ()->{
 			
 			for(int i=0; i<5; i++) {
 				System.out.println("I'm a Thread One :)");
@@ -17,20 +39,20 @@ public class ThreadImplementationUsingLambdaExample {
 			}
 		});
 
-		Thread threadTwo = new Thread(()->{
+		Runnable threadTwo = new Thread(()->{
 			for(int i=0; i<5; i++)
 				System.out.println("I'm a Thread Two :)");
 		});
 
-		threadOne.start();
+		threadOne.run();
 		
 		try {
-			threadOne.join();// Thread will wait until thread one completes its execution 
-		} catch (InterruptedException e) {
+			//threadOne.join();// Thread will wait until thread one completes its execution 
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		threadTwo.start();
+		threadTwo.run();
 		
 	}
 }

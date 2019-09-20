@@ -1,10 +1,12 @@
 package com.appdirect.lambdasImpl;
 
-@FunctionalInterface
+ @FunctionalInterface
 interface Interf{
 	
+	// Single Abstract Method
 	public void display();
-	
+
+	// Multiple Default 
     default void normalFun() 
     { 
        System.out.println("Hello"); 
@@ -35,11 +37,10 @@ public class ZeroParameterLambdaExample {
 		Interf interf = ()->System.out.println("Zero Parameter Lambda"); 
 		interf.display();
 
-/*		
-		ConcreteClass concreteClass = new ConcreteClass();
-		concreteClass.local();
-		concreteClass.display();
-*/
+//		Interf concreteClass = new ConcreteClass();
+//		concreteClass.local();
+//		concreteClass.display();
+
 	}
 	
 }

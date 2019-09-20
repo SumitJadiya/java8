@@ -13,7 +13,7 @@ interface OneParameterLambdaInterface{
 public class OneParameterLambdaExample {
 
 	public static void main(String[] args) {
-		OneParameterLambdaInterface oneParameterLambdaInterface = (x)->System.out.println("The value is " + x);
+		OneParameterLambdaInterface oneParameterLambdaInterface = x->System.out.println("The value is " + x);
 		oneParameterLambdaInterface.displayValue(10);
 		oneParameterLambdaInterface.normalDefaultMethod();
 	}
